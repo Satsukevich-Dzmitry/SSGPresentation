@@ -209,12 +209,12 @@ ul li {
 }
 
 .flip-card-front {
-	background: linear-gradient(90deg, rgba(232, 5, 5, 1) 0%, rgba(255, 112, 3, 1) 25%, rgba(247, 221, 10, 1) 49%, rgba(228, 255, 12, 1) 62%, rgba(136, 232, 22, 1) 100%);
+	background: rgb(227, 227, 55);
 	color: black;
 }
 
 .flip-card-back {
-	background: linear-gradient(90deg, rgba(232, 5, 5, 1) 0%, rgba(255, 112, 3, 1) 25%, rgba(247, 221, 10, 1) 49%, rgba(228, 255, 12, 1) 62%, rgba(136, 232, 22, 1) 100%);
+	background: rgb(126, 126, 30);
 	color: white;
 	transform: rotateY(180deg);
 }

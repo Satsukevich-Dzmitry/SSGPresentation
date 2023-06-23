@@ -1,14 +1,16 @@
 <script setup lang="ts">
 
 const props = defineProps<{
-	text: string
+	text?: string
 }>()
 
 </script>
 
 <template>
 	<div class="arrow">
-		<slot><span class="arrow-text">{{ text }}</span></slot>
+		<div class="arrow-slot">
+			<slot><span class="arrow-text">{{ text }}</span></slot>
+		</div>
 	</div>
 </template>
 <style lang="css" scoped>
@@ -46,6 +48,14 @@ const props = defineProps<{
 	position: absolute;
 	left: 50%;
 	top: 0;
+	transform: translate(-50%, -100%);
+	white-space: nowrap;
+}
+
+.arrow-slot {
+	position: absolute;
+	left: 50%;
+	top: -5px;
 	transform: translate(-50%, -100%);
 	white-space: nowrap;
 }

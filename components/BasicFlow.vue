@@ -13,30 +13,33 @@ import LeftArrow from './LeftArrow.vue';
 				there are any new cool
 				posts on my favorite
 				fast-web.com</span>
-			<span v-if="$slidev.nav.clicks === 7" class="bubble bubble-bottom-left" v-motion-slide-bottom>Wow. It was so
+			<span v-if="$slidev.nav.clicks === 6" class="bubble bubble-bottom-left" v-motion-slide-bottom>Wow. It was so
 				<span class="blazingly-fast">Blazingly fast</span></span>
-			<span v-if="$slidev.nav.clicks === 8" class="bubble bubble-bottom-left" v-motion-slide-bottom>I should write my
+			<span v-if="$slidev.nav.clicks === 7" class="bubble bubble-bottom-left" v-motion-slide-bottom>I should write my
 				own post. So it's time to login.</span>
-			<span v-if="$slidev.nav.clicks === 11" class="bubble bubble-bottom-left" v-motion-slide-bottom>Fast as always!
+			<span v-if="$slidev.nav.clicks === 10" class="bubble bubble-bottom-left" v-motion-slide-bottom>Fast as always!
 				Take my mon... creds</span>
 		</div>
-		<div class="typewriter" v-if="$slidev.nav.clicks === 2">
-			<p>fast-web.com</p>
-		</div>
-		<RightArrow text="Give me fast-web.com" v-motion-slide-left v-if="$slidev.nav.clicks === 3" />
+		<RightArrow v-motion-slide-left v-if="$slidev.nav.clicks === 2">
+			<div class="typewriter">
+				<p>fast-web.com</p>
+			</div>
+		</RightArrow>
 		<LeftArrow text="Here is index.html" v-motion-slide-right
-			v-if="$slidev.nav.clicks >= 6 && $slidev.nav.clicks <= 7" />
-		<div class="typewriter-2" v-if="$slidev.nav.clicks === 8">
-			<p>fast-web.com/login</p>
-		</div>
-		<RightArrow text="Give me login page" v-motion-slide-left v-if="$slidev.nav.clicks === 9" />
+			v-if="$slidev.nav.clicks >= 5 && $slidev.nav.clicks <= 6" />
+		<RightArrow text="Give me login page" v-motion-slide-left v-if="$slidev.nav.clicks === 8">
+			<div class="typewriter-2">
+				<p>fast-web.com/login</p>
+			</div>
+		</RightArrow>
 		<LeftArrow text="Here is login.html" v-motion-slide-right
-			v-if="$slidev.nav.clicks >= 10 && $slidev.nav.clicks <= 11" />
-		<RightArrow text="Credentials" v-motion-slide-left v-if="$slidev.nav.clicks === 12" />
+			v-if="$slidev.nav.clicks >= 9 && $slidev.nav.clicks <= 10" />
+		<RightArrow text="Credentials" v-motion-slide-left v-if="$slidev.nav.clicks === 11" />
 		<div class="him">
-			<Spinner v-if="$slidev.nav.clicks === 4"></Spinner>
-			<img src="../img/cdn.png" alt="" class="me" v-if="$slidev.nav.clicks >= 5" v-motion-pop>
-			<span v-if="$slidev.nav.clicks === 13" class="right-bubble bubble-bottom-right" v-motion-slide-bottom>На этом
+			<Spinner v-if="$slidev.nav.clicks === 3"></Spinner>
+			<img src="../img/cdn.png" alt="" class="me" v-if="$slidev.nav.clicks >= 4" v-motion-pop>
+			<span v-if="$slidev.nav.clicks === 12" class="right-bubble bubble-bottom-right" v-motion-slide-bottom>На
+				этом
 				наши
 				полномочия все (вставить фото с намеком на некст митап)</span>
 		</div>
