@@ -177,6 +177,14 @@ clicks: 17
 
 # What Astro offers
 
+<AstroOffers/>
+
+---
+clicks: 1
+---
+
+<NewAstroPage/>
+
 ---
 ---
 
