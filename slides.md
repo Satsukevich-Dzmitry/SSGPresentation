@@ -240,13 +240,6 @@ url: https://ssgm-etup.vercel.app/onDemandISR
 ---
 ---
 
-# About performance and metrics
-
-<Metrics/>
-
----
----
-
 # Conclusion
 
 ---
