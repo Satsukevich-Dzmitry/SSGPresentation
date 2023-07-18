@@ -1,5 +1,6 @@
 <template>
 	<section class="crawler-wrapper">
+		<img v-if="$slidev.nav.clicks === 9" src="../img/perfect-blog.png" alt="">
 		<div class="crawler">
 			<img src="../img/crawler.png" alt="">
 			<span v-if="$slidev.nav.clicks === 4" class="bubble bubble-bottom-left" v-motion-slide-bottom>Sniff-sniff. I'm
@@ -11,6 +12,9 @@
 			</span>
 			<span v-if="$slidev.nav.clicks === 8" class="bubble bubble-bottom-left">
 				<img src="../img/perfection.jpeg" alt="" />
+			</span>
+			<span v-if="$slidev.nav.clicks === 9" class="bubble-small bubble-bottom-left">
+				It's my job!
 			</span>
 		</div>
 		<div class="page">
@@ -49,6 +53,21 @@
 	font-size: 18px;
 	line-height: 24px;
 	width: 300px;
+	background: #fff;
+	border-radius: 40px;
+	padding: 20px;
+	text-align: center;
+	color: #000;
+}
+
+.bubble-small {
+	position: absolute;
+	bottom: 110%;
+	left: 30%;
+	font-family: sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	width: 100px;
 	background: #fff;
 	border-radius: 40px;
 	padding: 20px;

@@ -138,7 +138,7 @@ clicks: 14
 src: ./pages/basicFlow.md
 ---
 ---
-clicks: 8
+clicks: 9
 ---
 
 # Why we might want SSG
