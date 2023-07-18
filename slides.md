@@ -73,9 +73,8 @@ So with SSG you also got some limitations
 <v-clicks>
 
 - Expect your <span class="long-build">build time to take longer then ever before</span>. 
-- No more highly dynamic or user-specific UI. <span class="no-dynamic">First S in SSG stands for Static</span>.
 - Get ready to add some checks where you code is running. <span class="no-dynamic">Browser-speific API call will break build</span>.
-- Get ready to have <span class="hard-updates">Complex invalidations</span> if your pages updates frequently.
+- Prepare yourself <span class="hard-updates">Complex invalidations</span> if your pages updates frequently.
 
 </v-clicks>
 
@@ -139,16 +138,20 @@ clicks: 14
 src: ./pages/basicFlow.md
 ---
 ---
+clicks: 8
+---
 
 # Why we might want SSG
 
 <v-clicks>
 
 - *SEO* support
-- We need green metrics
-- We cant use SSR for them and want to save money
+- We need *green metrics* for certain pages
+- We don't want SSR
 
 </v-clicks>
+
+<Crawler v-click></Crawler>
 
 ---
 clicks: 17
@@ -197,7 +200,7 @@ clicks: 1
 - You JS is still works. Parts of page can be rendered on client and be interactive.
 - Use Timers, LocalStorage, SessionStorage and onther browser-specific APIs with caution.
 - After user get his SSGed page hydration process happens and after it you will have CSA where everything else rendered by Client.
-- If you don't need SPA-like user experience but need good speed check Astro. 
+- If you don't need SPA-like user experience but need good speed check out Astro. 
 
 </v-clicks>
 
@@ -238,6 +241,8 @@ url: https://ssgm-etup.vercel.app/onDemandISR
 ---
 
 # About performance and metrics
+
+<Metrics/>
 
 ---
 ---

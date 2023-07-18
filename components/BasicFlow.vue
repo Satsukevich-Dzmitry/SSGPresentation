@@ -41,7 +41,7 @@ import LeftArrow from './LeftArrow.vue';
 			<span v-if="$slidev.nav.clicks === 12" class="right-bubble bubble-bottom-right" v-motion-slide-bottom>На
 				этом
 				наши
-				полномочия все (вставить фото с намеком на некст митап)</span>
+				полномочия все. SSG only for user-independent pages (вставить фото с намеком на некст митап)</span>
 		</div>
 	</section>
 </template>
