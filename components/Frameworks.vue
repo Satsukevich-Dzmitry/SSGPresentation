@@ -49,11 +49,20 @@ import StaticPage from './StaticPage.vue'
 		<div class="astro" v-if="$slidev.nav.clicks >= 17"><img class="astro-img" src="../img/astro.svg" alt=""> <span
 				v-if="$slidev.nav.clicks === 17" class="bubble bubble-bottom-left">
 				Don't forget about me 😏</span></div>
-		<p class="astro_joined" v-if="$slidev.nav.clicks == 16">ASTRO joined chat</p>
+		<p class="astro_joined" v-if="$slidev.nav.clicks == 16">
+			<span class="astro-span">
+				<img src="../img/astro.svg" alt="" />
+			</span>
+			<span>ASTRO <span class="op07">joined chat</span></span>
+		</p>
 	</div>
 </template>
 
 <style scoped lang="css">
+.op07 {
+	opacity: 0.5;
+}
+
 .image {
 	width: 75px;
 	height: 75px;
@@ -99,12 +108,28 @@ import StaticPage from './StaticPage.vue'
 
 .astro_joined {
 	position: absolute;
-	color: blue;
-	background: gray;
-	padding: 6px;
+	color: white;
+	background: rgb(31, 30, 30);
+	border: 0.5px solid rgb(81, 81, 81);
+	padding: 12px 6px;
 	border-radius: 12px;
-	top: 110%;
-	left: 80%;
+	top: 100%;
+	left: 76%;
+	width: 210px;
+}
+
+.astro-span {
+	border-radius: 50%;
+	background: black;
+	aspect-ratio: 1;
+	margin-right: 8px;
+	margin-left: 8px;
+}
+
+.astro-span img {
+	width: 20px;
+	height: 20px;
+	display: inline-block;
 }
 
 .finger {

@@ -20,10 +20,10 @@ const item4Finish = (el) => {
 		<Transition name="item-1" @after-enter="item1Finish">
 			<div class="flip-card item" v-show="$slidev.nav.clicks >= 1">
 				<div class="flip-card-inner">
-					<div class="flip-card-front">
+					<div class="flip-card-front flip-card-front-1">
 						Reasons
 					</div>
-					<ul class="flip-card-back">
+					<ul class="flip-card-back flip-card-back-1">
 						<li>CDN</li>
 						<li>CEO</li>
 					</ul>
@@ -33,10 +33,10 @@ const item4Finish = (el) => {
 		<Transition name="item-2" @after-enter="item2Finish">
 			<div class="flip-card item" v-show="$slidev.nav.clicks >= 2">
 				<div class="flip-card-inner">
-					<div class="flip-card-front">
+					<div class="flip-card-front flip-card-front-2">
 						Tools
 					</div>
-					<ul class="flip-card-back">
+					<ul class="flip-card-back flip-card-back-2">
 						<li>Frameworks</li>
 						<li>SSG-tools</li>
 					</ul>
@@ -46,10 +46,10 @@ const item4Finish = (el) => {
 		<Transition name="item-3" @after-enter="item3Finish">
 			<div class="flip-card item" v-show="$slidev.nav.clicks >= 3">
 				<div class="flip-card-inner">
-					<div class="flip-card-front">
+					<div class="flip-card-front flip-card-front-3">
 						Approaches
 					</div>
-					<ul class="flip-card-back">
+					<ul class="flip-card-back flip-card-back-3">
 						<li>SSG</li>
 						<li>ISR</li>
 					</ul>
@@ -59,10 +59,10 @@ const item4Finish = (el) => {
 		<Transition name="item-4" @after-enter="item4Finish">
 			<div class="flip-card item" v-show="$slidev.nav.clicks >= 4">
 				<div class="flip-card-inner">
-					<div class="flip-card-front">
+					<div class="flip-card-front flip-card-front-4">
 						Pros and cons
 					</div>
-					<ul class="flip-card-back">
+					<ul class="flip-card-back flip-card-back-4">
 						<li>Good parts</li>
 						<li>Weird parts</li>
 					</ul>
@@ -88,7 +88,7 @@ ul li {
 
 .item {
 	border-radius: 50%;
-	background: #fa932d;
+	background: white;
 	position: absolute;
 	top: 20%;
 	left: calc(50% - 70px);
@@ -97,6 +97,7 @@ ul li {
 	align-items: center;
 	width: 160px;
 	height: 160px;
+	color: black;
 }
 
 .item-1-enter-active {
@@ -206,13 +207,50 @@ ul li {
 	gap: 4px;
 }
 
-.flip-card-front {
-	background: rgb(227, 227, 55);
-	color: black;
+.flip-card-front-1 {
+	background: rgb(255, 255, 255);
+	border: 6px solid rgb(0, 168, 0);
+	color: rgb(0, 168, 0);
 }
 
-.flip-card-back {
-	background: rgb(126, 126, 30);
+.flip-card-back-1 {
+	background: rgb(0, 168, 0);
+	color: white;
+	transform: rotateY(180deg);
+}
+
+.flip-card-front-2 {
+	background: rgb(255, 255, 255);
+	border: 6px solid rgb(189, 214, 0);
+	color: rgb(189, 214, 0);
+}
+
+.flip-card-back-2 {
+	background: rgb(189, 214, 0);
+	color: white;
+	transform: rotateY(180deg);
+}
+
+.flip-card-front-3 {
+	background: rgb(255, 255, 255);
+	border: 6px solid rgb(228, 163, 0);
+	color: rgb(228, 163, 0);
+}
+
+.flip-card-back-3 {
+	background: rgb(228, 163, 0);
+	color: white;
+	transform: rotateY(180deg);
+}
+
+.flip-card-front-4 {
+	background: rgb(255, 255, 255);
+	border: 6px solid rgb(214, 89, 0);
+	color: rgb(214, 89, 0);
+}
+
+.flip-card-back-4 {
+	background: rgb(214, 89, 0);
 	color: white;
 	transform: rotateY(180deg);
 }
