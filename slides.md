@@ -28,6 +28,7 @@ preload: false
 clicks: 4
 src: ./pages/plan.md
 ---
+
 ---
 
 # What is it? 
@@ -35,6 +36,128 @@ src: ./pages/plan.md
 <v-click>
 
 Static-site generation(*SSG*) is the process of creating web-pages by pre-generating each page, resulting in really good performance and UX. 
+
+</v-click>
+
+<v-click>
+  code -> server -> static html
+</v-click>
+
+---
+clicks: 9
+---
+
+# Why we might want SSG
+
+<v-clicks>
+
+- *SEO* support
+- We need *green metrics* for certain pages
+- We don't want SSR
+
+</v-clicks>
+
+<Crawler v-click></Crawler>
+
+---
+preload: false
+clicks: 14
+src: ./pages/basicFlow.md
+---
+
+---
+clicks: 17
+---
+
+# What we need for SSG
+
+<v-clicks>
+
+- Server to generate HTML
+- Framework of choice
+
+</v-clicks>
+
+<Frameworks v-click></Frameworks>
+
+---
+---
+
+# ASTRO
+
+<AstroSell/>
+
+---
+---
+
+# What Astro offers
+
+<AstroOffers/>
+
+---
+clicks: 1
+---
+
+<NewAstroPage/>
+
+---
+---
+
+# What to remember with SSG
+
+<v-clicks>
+
+- You build time will increase. 
+- You should use SSG only for pages that are not changing too often and not depend on concrete user.
+- You JS is still works. Parts of page can be rendered on client and be interactive.
+- Use Timers, LocalStorage, SessionStorage and onther browser-specific APIs with caution.
+- After user get his SSGed page hydration process happens and after it you will have CSA where everything else rendered by Client.
+- If you don't need SPA-like user experience but need good speed check out Astro. 
+
+</v-clicks>
+
+<v-click>
+
+<h2 style="margin-top: 55px"> Now lets talk how our page get updates </h2>
+
+</v-click>
+
+---
+---
+
+# Types of revalidation
+
+By default generated page will be updated only when we rebuild or app.
+
+But we have 2 options to update it without entire rebuilding.
+
+## 1. Time-based revalidation
+
+Simple pattern where we just specify timer and after time passes page become outdated, and we rebuild only this specific page.
+
+## 2. On-demand revalidation
+
+Bit more complex pattern. We create invalidation-handler which receives request that will trigger rebuild process.
+For example after we get new post in our blog, CMS responsible for it will sent request that will invalidate page with posts.
+
+---
+layout: iframe
+
+url: https://ssgm-etup.vercel.app/timeISR
+---
+---
+layout: iframe
+
+url: https://ssgm-etup.vercel.app/onDemandISR
+---
+---
+
+# Conclusion
+
+
+<v-click>
+
+Static-site generation is a very powerfull approach when you have web-pages that doesn't need to be user-specific, but it has some limitations. 
 
 </v-click>
 
@@ -131,115 +254,4 @@ So with SSG you also got some limitations
   }
 
 </style>
-
----
-preload: false
-clicks: 14
-src: ./pages/basicFlow.md
----
----
-clicks: 9
----
-
-# Why we might want SSG
-
-<v-clicks>
-
-- *SEO* support
-- We need *green metrics* for certain pages
-- We don't want SSR
-
-</v-clicks>
-
-<Crawler v-click></Crawler>
-
----
-clicks: 17
----
-
-# What we need for SSG
-
-<v-clicks>
-
-- Server to generate HTML
-- Framework of choice
-
-</v-clicks>
-
-<Frameworks v-click></Frameworks>
-
----
----
-
-# ASTRO
-
-<AstroSell/>
-
----
----
-
-# What Astro offers
-
-<AstroOffers/>
-
----
-clicks: 1
----
-
-<NewAstroPage/>
-
----
----
-
-# What to remember with SSG
-
-<v-clicks>
-
-- You build time will increase. 
-- You should use SSG only for pages that are not changing too often and not depend on concrete user.
-- You JS is still works. Parts of page can be rendered on client and be interactive.
-- Use Timers, LocalStorage, SessionStorage and onther browser-specific APIs with caution.
-- After user get his SSGed page hydration process happens and after it you will have CSA where everything else rendered by Client.
-- If you don't need SPA-like user experience but need good speed check out Astro. 
-
-</v-clicks>
-
-<v-click>
-
-<h2 style="margin-top: 55px"> Now lets talk how our page get updates </h2>
-
-</v-click>
-
----
----
-
-# Types of revalidation
-
-By default generated page will be updated only when we rebuild or app.
-
-But we have 2 options to update it without entire rebuilding.
-
-## 1. Time-based revalidation
-
-Simple pattern where we just specify timer and after time passes page become outdated, and we rebuild only this specific page.
-
-## 2. On-demand revalidation
-
-Bit more complex pattern. We create invalidation-handler which receives request that will trigger rebuild process.
-For example after we get new post in our blog, CMS responsible for it will sent request that will invalidate page with posts.
-
----
-layout: iframe
-
-url: https://ssgm-etup.vercel.app/timeISR
----
----
-layout: iframe
-
-url: https://ssgm-etup.vercel.app/onDemandISR
----
----
-
-# Conclusion
-
 ---
