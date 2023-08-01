@@ -1,25 +1,26 @@
 <template>
 	<section class="crawler-wrapper">
-		<img v-if="$slidev.nav.clicks === 9" src="../img/perfect-blog.png" alt="">
-		<div class="crawler">
+		<img src="/create-blog.png" class="img-blog" v-if="$slidev.nav.clicks === 4" />
+		<img v-if="$slidev.nav.clicks === 10" src="../img/perfect-blog.png" alt="">
+		<div class="crawler" v-if="$slidev.nav.clicks >= 5">
 			<img src="../img/crawler.png" alt="">
-			<span v-if="$slidev.nav.clicks === 4" class="bubble bubble-bottom-left" v-motion-slide-bottom>Sniff-sniff. I'm
+			<span v-if="$slidev.nav.clicks === 5" class="bubble bubble-bottom-left" v-motion-slide-bottom>Sniff-sniff. I'm
 				sniffing and try to find best
 				websites and show them in Google.
 			</span>
-			<span v-if="$slidev.nav.clicks === 6" class="bubble bubble-bottom-left">
+			<span v-if="$slidev.nav.clicks === 7" class="bubble bubble-bottom-left">
 				What is it?
 			</span>
-			<span v-if="$slidev.nav.clicks === 8" class="bubble bubble-bottom-left">
+			<span v-if="$slidev.nav.clicks === 9" class="bubble bubble-bottom-left">
 				<img src="../img/perfection.jpeg" alt="" />
 			</span>
-			<span v-if="$slidev.nav.clicks === 9" class="bubble-small bubble-bottom-left">
+			<span v-if="$slidev.nav.clicks === 10" class="bubble-small bubble-bottom-left">
 				It's my job!
 			</span>
 		</div>
 		<div class="page">
-			<img v-if="$slidev.nav.clicks === 5" src="../img/web-page.gif" alt="">
-			<img v-if="$slidev.nav.clicks === 7" src="../img/lighthouse.jpeg" alt="">
+			<img v-if="$slidev.nav.clicks === 6" src="../img/web-page.gif" alt="">
+			<img v-if="$slidev.nav.clicks === 8" src="../img/lighthouse.jpeg" alt="">
 		</div>
 	</section>
 </template>
@@ -38,6 +39,12 @@
 .crawler {
 	width: 150px;
 	position: relative;
+}
+
+.img-blog {
+	height: 325px;
+	align-self: center;
+	margin: 0 auto;
 }
 
 .page img {
