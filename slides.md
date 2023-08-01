@@ -131,14 +131,35 @@ By default generated page will be updated only when we rebuild or app.
 
 But we have 2 options to update it without entire rebuilding.
 
-## 1. Time-based revalidation
+<div class="options">
+  <div v-click class="option">
+    <h2>Time-based revalidation</h2>
+    <p>Simple pattern where we just specify timer and after time passes page concidered outdated. And for all outdated pages rebuild process begins. <br/>
+    Usefull if we want to update something like reviews.</p>
+  </div>
+    <div v-click class="option">
+    <h2>On-demand revalidation</h2>
+    <p>Bit more complex pattern. We create invalidation-handler which receives request that will trigger rebuild process.
+    For example after we get new post in our blog, CMS responsible for it will sent request that will invalidate page with posts.
+    </p>
+  </div>
+</div>
 
-Simple pattern where we just specify timer and after time passes page become outdated, and we rebuild only this specific page.
-
-## 2. On-demand revalidation
-
-Bit more complex pattern. We create invalidation-handler which receives request that will trigger rebuild process.
-For example after we get new post in our blog, CMS responsible for it will sent request that will invalidate page with posts.
+<style>
+  .options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+  }
+  .option {
+    border-radius: 8px;
+    border: white 2px solid;
+    padding: 10px;
+    height: 220px;
+  }
+</style>
 
 ---
 layout: iframe
