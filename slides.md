@@ -13,13 +13,13 @@ title: EDU SSR series SSG
 
 <v-click>
 
-Today we will talk about...
+Today our topic is...
 
 </v-click>
 
 <v-click>
 
-SSG!
+1-2-SSG!
 
 </v-click>
 

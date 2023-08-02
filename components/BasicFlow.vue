@@ -38,10 +38,13 @@ import LeftArrow from './LeftArrow.vue';
 		<div class="him">
 			<Spinner v-if="$slidev.nav.clicks === 3"></Spinner>
 			<img src="../img/cdn.png" alt="" class="me" v-if="$slidev.nav.clicks >= 4" v-motion-pop>
-			<span v-if="$slidev.nav.clicks === 12" class="right-bubble bubble-bottom-right" v-motion-slide-bottom>На
-				этом
-				наши
-				полномочия все. SSG only for user-independent pages (вставить фото с намеком на некст митап)</span>
+			<span v-if="$slidev.nav.clicks === 12" class="right-bubble bubble-bottom-right" v-motion-slide-bottom>
+				My job is done. Everything user-specific will be CSR or SSR.
+			</span>
+			<span v-if="$slidev.nav.clicks === 13" class="right-bubble bubble-bottom-right" v-motion-slide-bottom>
+				<img src="../img/frog.webp" class="frog" />
+				Visit next meetup to learn SSR
+			</span>
 		</div>
 	</section>
 </template>
@@ -200,5 +203,10 @@ import LeftArrow from './LeftArrow.vue';
 	50% {
 		border-color: orange;
 	}
+}
+
+.frog {
+	height: 110px;
+	margin: 0 auto;
 }
 </style>
