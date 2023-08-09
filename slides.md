@@ -28,7 +28,8 @@ preload: false
 clicks: 4
 src: ./pages/plan.md
 ---
-
+---
+clicks: 6
 ---
 
 # What is it? 
@@ -40,8 +41,9 @@ Static-site generation(*SSG*) is the process of creating web-pages by pre-genera
 </v-click>
 
 <v-click>
-  code -> server -> static html
+  <ServerGeneration/> 
 </v-click>
+
 
 ---
 clicks: 10
