@@ -37,7 +37,7 @@ const increment = () => counter.value = counter.value + 1
 		<span v-if="$slidev.nav.clicks === 14" class="bubble bubble-bottom-left">
 			Because after we generate page we don't throw away JS. So all this interactions will still work.</span>
 		<span v-if="$slidev.nav.clicks === 15" class="bubble bubble-bottom-left">
-			More then that, after <span>HYDRATION</span> we will get SPA. Only first page is SSGed</span>
+			More then that, after <span>HYDRATION</span> we will get SPA-like experience.</span>
 		<pre v-if="$slidev.nav.clicks == 9">{{ rawHtml }}</pre>
 	</div>
 </template>
