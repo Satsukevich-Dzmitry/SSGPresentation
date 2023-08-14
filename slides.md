@@ -46,7 +46,7 @@ Static-site generation(*SSG*) is the process of creating web-pages by pre-genera
 
 
 ---
-clicks: 10
+clicks: 12
 ---
 
 # Why we might want SSG
