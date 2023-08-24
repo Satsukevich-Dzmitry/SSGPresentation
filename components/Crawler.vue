@@ -1,6 +1,6 @@
 <template>
 	<section class="crawler-wrapper">
-		<img src="../img/sponge-bob-sleep.jpeg" class="img-blog" v-if="$slidev.nav.clicks === 4" />
+		<img src="../img/sponge-bob-works.jpeg" class="img-blog" v-if="$slidev.nav.clicks === 4" />
 		<img src="../img/sponge-bob-after-hours.jpeg" class="img-blog" v-if="$slidev.nav.clicks === 5" />
 		<img src="../img/sponge-bob-result.jpg" class="img-blog" v-if="$slidev.nav.clicks === 6" />
 		<img v-if="$slidev.nav.clicks === 12" src="../img/perfect-blog.png" alt="">

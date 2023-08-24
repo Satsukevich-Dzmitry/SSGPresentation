@@ -29,6 +29,123 @@ clicks: 4
 src: ./pages/plan.md
 ---
 ---
+
+<img src="/sponge-bob-sleep.jpeg" class="img-blog" />
+
+---
+---
+
+<section class='conditions'>
+<div>
+
+# What he want
+
+<v-clicks>
+
+- *SEO* support
+- We need *green metrics* for certain pages
+- Flexibility that can't be achieved without modern frameworks
+
+</v-clicks>
+
+</div>
+
+<div>
+
+# What he has
+
+<v-clicks>
+
+- Bright mind and enthusiasm
+- Low money budget
+- Knowledge from this meetup :)
+
+</v-clicks>
+
+</div>
+</section>
+
+<section class="render-options">
+  <div class="blalbe">
+    <figure class="figure">
+      <figure v-click class="red_cross">
+        <img src="/Red_X.svg">
+        <figcaption>Bad SEO</figcaption>
+      </figure>
+      <img class="imagessss" src="/React.svg"/>
+      <figcaption>Plain CSR framework</figcaption>
+    </figure>
+  </div>
+  <div class="blalbe">
+    <figure class="figure">
+      <figure v-click class="red_cross">
+        <img src="/Red_X.svg">
+        <figcaption>Server costs</figcaption>
+      </figure>
+      <img class="imagessss" src="/Next.svg"/>
+      <figcaption>SSR</figcaption>
+    </figure>
+  </div>
+  <div class="blalbe">
+    <figure class="figure">
+      <figure v-click class="red_cross">
+        <img src="/green-check.svg">
+        <figcaption>All cool</figcaption>
+      </figure>
+      <img class="imagessss" src="/Next_SSG.svg"/>
+      <figcaption>SSG</figcaption>
+    </figure>
+  </div>
+</section>
+
+<style>
+  .conditions{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+  .render-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+  }
+  .blalbe {
+    width: 100%;
+    height: 100%;
+  }
+  .red_cross {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; 
+  }
+  .red_cross img { 
+    width: 200px;
+    height: 200px;
+  }
+  .red_cross figcaption { 
+    text-align: center;
+    width: 200px;
+    background: hsl(231, 15%, 18%);
+  }
+  .figure {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; 
+    margin-top: 15px;
+  }
+  .imagessss {
+    width: 200px;
+    height: 200px;
+  }
+</style>
+
+---
 clicks: 6
 ---
 
@@ -49,13 +166,13 @@ Static-site generation(*SSG*) is the process of creating web-pages by pre-genera
 clicks: 12
 ---
 
-# Why we might want SSG
+# What Sponge will get from SSG
 
 <v-clicks>
 
-- *SEO* support
-- We need *green metrics* for certain pages
-- We don't want SSR
+- *SEO* support ✅
+- *Green metrics* for certain pages ✅
+- No SSR ✅
 
 </v-clicks>
 
