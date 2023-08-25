@@ -23,10 +23,6 @@ const item4Finish = (el) => {
 					<div class="flip-card-front flip-card-front-1">
 						Reasons
 					</div>
-					<ul class="flip-card-back flip-card-back-1">
-						<li>CDN</li>
-						<li>CEO</li>
-					</ul>
 				</div>
 			</div>
 		</Transition>
@@ -36,10 +32,6 @@ const item4Finish = (el) => {
 					<div class="flip-card-front flip-card-front-2">
 						Tools
 					</div>
-					<ul class="flip-card-back flip-card-back-2">
-						<li>Frameworks</li>
-						<li>SSG-tools</li>
-					</ul>
 				</div>
 			</div>
 		</Transition>
@@ -49,10 +41,6 @@ const item4Finish = (el) => {
 					<div class="flip-card-front flip-card-front-3">
 						Approaches
 					</div>
-					<ul class="flip-card-back flip-card-back-3">
-						<li>SSG</li>
-						<li>ISR</li>
-					</ul>
 				</div>
 			</div>
 		</Transition>
@@ -62,10 +50,6 @@ const item4Finish = (el) => {
 					<div class="flip-card-front flip-card-front-4">
 						Pros and cons
 					</div>
-					<ul class="flip-card-back flip-card-back-4">
-						<li>Good parts</li>
-						<li>Weird parts</li>
-					</ul>
 				</div>
 			</div>
 		</Transition>
@@ -188,9 +172,6 @@ ul li {
 	border-radius: 50%;
 }
 
-.flip-card:hover .flip-card-inner {
-	transform: rotateY(180deg);
-}
 
 .flip-card-front,
 .flip-card-back {
@@ -213,22 +194,10 @@ ul li {
 	color: rgb(0, 168, 0);
 }
 
-.flip-card-back-1 {
-	background: rgb(0, 168, 0);
-	color: white;
-	transform: rotateY(180deg);
-}
-
 .flip-card-front-2 {
 	background: rgb(255, 255, 255);
 	border: 6px solid rgb(189, 214, 0);
 	color: rgb(189, 214, 0);
-}
-
-.flip-card-back-2 {
-	background: rgb(189, 214, 0);
-	color: white;
-	transform: rotateY(180deg);
 }
 
 .flip-card-front-3 {
@@ -237,21 +206,10 @@ ul li {
 	color: rgb(228, 163, 0);
 }
 
-.flip-card-back-3 {
-	background: rgb(228, 163, 0);
-	color: white;
-	transform: rotateY(180deg);
-}
-
 .flip-card-front-4 {
 	background: rgb(255, 255, 255);
 	border: 6px solid rgb(214, 89, 0);
 	color: rgb(214, 89, 0);
 }
 
-.flip-card-back-4 {
-	background: rgb(214, 89, 0);
-	color: white;
-	transform: rotateY(180deg);
-}
 </style>

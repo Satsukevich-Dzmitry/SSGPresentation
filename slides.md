@@ -8,6 +8,8 @@ drawings:
   persist: false
 transition: slide-up
 title: EDU SSR series SSG
+fonts: 
+ serif: 'Poppins'
 ---
 # Hi! Thanks for joining.
 
@@ -22,6 +24,7 @@ Today our topic is...
 1-2-SSG!
 
 </v-click>
+
 
 ---
 preload: false
@@ -56,9 +59,9 @@ src: ./pages/plan.md
 
 <v-clicks>
 
-- Bright mind and enthusiasm
-- Low money budget
-- Knowledge from this meetup :)
+- Bright mind and enthusiasm <img src="sponge-imagine.webp" class="krabs sponge" />
+- Low money budget <img src="Mr._Krabs.svg" class="krabs" />
+- Knowledge from this meetup :)<img src="Mr._Krabs.svg" class="krabs" />
 
 </v-clicks>
 
@@ -143,13 +146,21 @@ src: ./pages/plan.md
     width: 200px;
     height: 200px;
   }
+  .krabs {
+    width: 30px;
+    height: 30px;
+    float: right;
+  }
+  .sponge {
+    width: 40px;
+  }
 </style>
 
 ---
 clicks: 6
 ---
 
-# What is it? 
+# What is it "SSG"? 
 
 <v-click>
 
@@ -200,6 +211,11 @@ clicks: 17
 <Frameworks v-click></Frameworks>
 
 ---
+clicks: 1
+---
+
+<AstroPart pageToRun=9>Astro</AstroPart>
+
 ---
 
 # ASTRO
@@ -207,17 +223,111 @@ clicks: 17
 <AstroSell/>
 
 ---
+clicks: 1
 ---
 
-# What Astro offers
+<AstroPart pageToRun=11>Islands</AstroPart>
 
-<AstroOffers/>
+---
+---
+
+# What are Islands
+<section class="page-with-islands">
+  <p>Page</p>
+  <section class="wrapper-islands">
+    <Island type="react" class="react">
+			<template v-slot:icon>
+				<img class="logo-img" src="/React.svg" alt="">
+			</template>
+			<template v-slot:title>React</template>
+		</Island>
+    <Island type="vue" class="vue">
+			<template v-slot:icon>
+				<img class="logo-img" src="/Vue.svg" alt="">
+			</template>
+			<template v-slot:title>Vue</template>
+	  </Island>
+    <Island type="svelte" class="svelte">
+	  	<template v-slot:icon>
+				<img class="logo-img" src="/Svelte.svg" alt="">
+			</template>
+			<template v-slot:title>Svelte</template>
+		</Island>
+    <Island type="html" class="html">
+			<template v-slot:icon>
+				<img class="logo-img" src="/Html.svg" alt="">
+			</template>
+			<template v-slot:title>HTML</template>
+		</Island>
+  </section>
+</section>
+
+<style lang='css' scoped>
+  .page-with-islands {
+    width: 100%;
+    height: 93%;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid white;
+    text-align: center;
+  }
+  .page-with-islands p {
+    margin: 0;
+  }
+  .wrapper-islands {
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    gap: 5px;
+    display: grid;
+    grid-template-areas: "header  header"
+                         "sidebar main  "
+                         "sidebar footer";
+    grid-template-rows: repeat(3, 110px);
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .react {
+    grid-area: header;
+  }
+  .vue {
+    grid-area: main;
+  }
+  .svelte {
+    grid-area: sidebar;
+  }
+  .html {
+    grid-area: footer;
+  }
+  .logo-img {
+	width: 40px;
+	height: 40px;
+}
+</style>
 
 ---
 clicks: 1
 ---
 
-<NewAstroPage/>
+# But what for?
+
+<img class="brando" src="/Brando.png" v-click />
+
+<style lang="css" scoped>
+.brando {
+  margin: 0 auto;
+}
+</style>
+---
+clicks: 1
+---
+
+<AstroPart  pageToRun=14>Directives</AstroPart>
+
+---
+clicks: 1
+---
+
+PIck your directive
 
 ---
 ---
@@ -394,4 +504,10 @@ So with SSG you also got some limitations
   }
 
 </style>
+---
+clicks: 1
+---
+
+<AstroPart pageToRun=21>Thanks</AstroPart>
+
 ---

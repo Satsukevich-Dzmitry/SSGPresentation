@@ -12,24 +12,23 @@ import LeftArrow from './LeftArrow.vue';
 			<span v-if="$slidev.nav.clicks === 1" class="bubble bubble-bottom-left" v-motion-slide-bottom>Hmmm, wonder if
 				there are any new cool
 				posts on my favorite
-				fast-web.com</span>
+				sponge-blog.com</span>
 			<span v-if="$slidev.nav.clicks === 6" class="bubble bubble-bottom-left" v-motion-slide-bottom>Wow. It was so
 				<span class="blazingly-fast">Blazingly fast</span></span>
-			<span v-if="$slidev.nav.clicks === 7" class="bubble bubble-bottom-left" v-motion-slide-bottom>I should write my
-				own post. So it's time to login.</span>
+			<span v-if="$slidev.nav.clicks === 7" class="bubble bubble-bottom-left" v-motion-slide-bottom>I want to write a comment. So it's time to login.</span>
 			<span v-if="$slidev.nav.clicks === 10" class="bubble bubble-bottom-left" v-motion-slide-bottom>Fast as always!
 				Take my mon... creds</span>
 		</div>
 		<RightArrow v-motion-slide-left v-if="$slidev.nav.clicks === 2">
 			<div class="typewriter">
-				<p>fast-web.com</p>
+				<p>sponge-blog.com</p>
 			</div>
 		</RightArrow>
 		<LeftArrow text="Here is index.html" v-motion-slide-right
 			v-if="$slidev.nav.clicks >= 5 && $slidev.nav.clicks <= 6" />
 		<RightArrow text="Give me login page" v-motion-slide-left v-if="$slidev.nav.clicks === 8">
 			<div class="typewriter-2">
-				<p>fast-web.com/login</p>
+				<p>sponge-blog.com/login</p>
 			</div>
 		</RightArrow>
 		<LeftArrow text="Here is login.html" v-motion-slide-right
@@ -39,7 +38,7 @@ import LeftArrow from './LeftArrow.vue';
 			<Spinner v-if="$slidev.nav.clicks === 3"></Spinner>
 			<img src="../img/cdn.png" alt="" class="me" v-if="$slidev.nav.clicks >= 4" v-motion-pop>
 			<span v-if="$slidev.nav.clicks === 12" class="right-bubble bubble-bottom-right" v-motion-slide-bottom>
-				My job is done. Everything user-specific will be CSR or SSR.
+				My job is done. After you login everything will be personalised. And user-specific pages will be CSR or SSR.
 			</span>
 			<span v-if="$slidev.nav.clicks === 13" class="right-bubble bubble-bottom-right" v-motion-slide-bottom>
 				<img src="../img/frog.webp" class="frog" />
@@ -136,7 +135,7 @@ import LeftArrow from './LeftArrow.vue';
 }
 
 .typewriter {
-	width: 170px;
+	width: 210px;
 	border-radius: 30px;
 	border: 1px solid #dcdcdc;
 	display: flex;
@@ -148,7 +147,7 @@ import LeftArrow from './LeftArrow.vue';
 
 .typewriter p {
 	overflow: hidden;
-	width: 170px;
+	width: 210px;
 	border-right: .15em solid white;
 	white-space: nowrap;
 	margin: 0 auto;
@@ -159,7 +158,7 @@ import LeftArrow from './LeftArrow.vue';
 }
 
 .typewriter-2 {
-	width: 230px;
+	width: 270px;
 	border-radius: 30px;
 	border: 1px solid #dcdcdc;
 	display: flex;
@@ -171,7 +170,7 @@ import LeftArrow from './LeftArrow.vue';
 
 .typewriter-2 p {
 	overflow: hidden;
-	width: 230px;
+	width: 270px;
 	border-right: .15em solid white;
 	white-space: nowrap;
 	margin: 0 auto;

@@ -50,6 +50,9 @@ import StaticPage from './StaticPage.vue'
 				v-if="$slidev.nav.clicks === 17" class="bubble bubble-bottom-left">
 				Don't forget about me 😏</span></div>
 		<p class="astro_joined" v-if="$slidev.nav.clicks == 16">
+			<audio autoplay>
+				<source src="notification.mp3" type="audio/mp3">
+			</audio>
 			<span class="astro-span">
 				<img src="../img/astro.svg" alt="" />
 			</span>

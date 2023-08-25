@@ -6,31 +6,22 @@ const props = defineProps<{
 
 <template>
 	<div class="island" :class="type">
-		<div>
 			<slot name="icon"></slot>
 			<slot name="title"></slot>
-		</div>
-		<div>
-			<slot>Content</slot>
-		</div>
 	</div>
 </template>
 
 <style scoped lang="css">
 .island {
 	width: 100%;
-	max-height: 80px;
+	height: 100%;
 	display: flex;
+	flex-direction: column;
 	align-items: center;
-	justify-content: flex-start;
-	gap: 10px;
+	justify-content: center;
+	gap: 6px;
 	border-radius: 8px;
 	padding: 10px;
-	transition: all 0.5s linear;
-}
-
-.island:hover {
-	transform: scale(1.05)
 }
 
 .vue {
