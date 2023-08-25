@@ -157,7 +157,7 @@ src: ./pages/plan.md
 </style>
 
 ---
-clicks: 6
+clicks: 4
 ---
 
 # What is it "SSG"? 
@@ -220,21 +220,61 @@ clicks: 1
 
 # ASTRO
 
-<AstroSell/>
+<AstroSell>Want some Islands?</AstroSell>
+
+---
+
+# ASTRO
+
+<AstroSell2>A new web architecture for building faster websites.</AstroSell2>
 
 ---
 clicks: 1
 ---
 
-<AstroPart pageToRun=11>Islands</AstroPart>
+<AstroPart pageToRun=12>Islands</AstroPart>
 
 ---
+---
+
+# Typical page
+<section class="page-with-islands">
+  <p>Page</p>
+    <Island type="react" class="react" v-click>
+			<template v-slot:icon>
+				<img class="logo-img" src="/React.svg" alt="">
+			</template>
+			<template v-slot:title>React</template>
+		</Island>
+</section>
+
+<style lang='css' scoped>
+  .page-with-islands {
+    width: 100%;
+    height: 93%;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid white;
+    text-align: center;
+  }
+  .page-with-islands p {
+    margin: 0;
+  }
+  .logo-img {
+	width: 40px;
+	height: 40px;
+}
+.react {
+  height: 95%;
+}
+</style>
+
 ---
 
 # What are Islands
 <section class="page-with-islands">
   <p>Page</p>
-  <section class="wrapper-islands">
+  <section class="wrapper-islands" v-click>
     <Island type="react" class="react">
 			<template v-slot:icon>
 				<img class="logo-img" src="/React.svg" alt="">
@@ -305,10 +345,20 @@ clicks: 1
 </style>
 
 ---
-clicks: 1
 ---
 
-# But what for?
+# Is there a reason?
+
+<img class="brando" src="/raynolds.jpeg" v-click />
+
+<style lang="css" scoped>
+.raynolds {
+  margin: 0 auto;
+}
+</style>
+---
+
+# There is!
 
 <img class="brando" src="/Brando.png" v-click />
 
@@ -321,7 +371,7 @@ clicks: 1
 clicks: 1
 ---
 
-<AstroPart  pageToRun=14>Directives</AstroPart>
+<AstroPart  pageToRun=17>Directives</AstroPart>
 
 ---
 clicks: 1
@@ -508,6 +558,6 @@ So with SSG you also got some limitations
 clicks: 1
 ---
 
-<AstroPart pageToRun=21>Thanks</AstroPart>
+<AstroPart pageToRun=24>Thanks</AstroPart>
 
 ---

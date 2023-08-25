@@ -1,3 +1,3 @@
-# Use-case for SSG
+# What user gets?
 
 <BasicFlow/>

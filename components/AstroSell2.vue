@@ -1,6 +1,6 @@
 <template>
 	<div class="astro-sell">
-		<img src="../img/astro-sell.png" alt="">
+		<img src="/astro-sell-2.png" alt="">
 		<span class="bubble bubble-bottom-left">
 		<slot></slot></span>
 	</div>
