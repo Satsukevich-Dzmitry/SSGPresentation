@@ -76,6 +76,7 @@
 	transition: opacity 1s linear;
 	font-size: 55px;
 	line-height: 60px;
+	font-style: italic;
 }
 
 .directives-wrapper p:nth-child(2) {
