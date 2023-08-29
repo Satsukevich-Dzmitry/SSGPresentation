@@ -374,10 +374,10 @@ clicks: 1
 <AstroPart  pageToRun=17>Directives</AstroPart>
 
 ---
-clicks: 1
+clicks: 9
 ---
 
-PIck your directive
+<Directives/>
 
 ---
 ---
