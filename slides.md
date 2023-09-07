@@ -61,7 +61,7 @@ src: ./pages/plan.md
 
 - Bright mind and enthusiasm <img src="sponge-imagine.webp" class="krabs sponge" />
 - Low money budget <img src="Mr._Krabs.svg" class="krabs" />
-- Knowledge from this meetup :)<img src="Mr._Krabs.svg" class="krabs" />
+- Knowledge from this meetup :)<img src="edu_logo.png" class="krabs" />
 
 </v-clicks>
 
