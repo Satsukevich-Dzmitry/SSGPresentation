@@ -112,7 +112,7 @@ const shouldPlay = computed(()=>{
 	position: absolute;
 	left: 0;
 	top: 0;
-	color: rgba(255,255,255,0.5);
+	color: rgba(255,255,255,0.14);
 	z-index: -1;
 	font-size: 75px;
 	filter: blur(2px);

@@ -374,10 +374,71 @@ clicks: 1
 <AstroPart pageToRun=17>Directives</AstroPart>
 
 ---
+
+<v-click>
+
+```tsx
+// fancy react Island
+
+export const FancyReact = (blabla: Props)=>{
+  return (
+    <SomeJSX/>
+  )
+}
+
+```
+
+</v-click>
+
+<v-click>
+
+```tsx
+// Astro app entrypoint
+
+import ReactPart from "**/*/index.tsx";
+---
+
+<Layout title="Welcome React-haters">
+  <main>
+    <ReactPart/>
+  </main>
+</Layout>
+```
+
+</v-click>
+
+<div class="diff">
+<v-click>
+<img src="/load-me-js.png" />
+</v-click>
+<v-click>
+
+```tsx
+<ReactPart client:idle />
+```
+
+✅ Done
+</v-click>
+</div>
+
+<style lang="css" scoped>
+.diff {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.diff img {
+  width: 200px;
+}
+</style>
+---
 clicks: 9
 ---
 
-<Directives  pageToRun=18 />
+<Directives  pageToRun=19 />
 
 ---
 ---
@@ -558,6 +619,6 @@ So with SSG you also got some limitations
 clicks: 1
 ---
 
-<AstroPart pageToRun=24>Thanks</AstroPart>
+<AstroPart pageToRun=25>Thanks</AstroPart>
 
 ---
