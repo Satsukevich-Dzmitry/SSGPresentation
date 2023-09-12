@@ -371,13 +371,13 @@ clicks: 1
 clicks: 1
 ---
 
-<AstroPart  pageToRun=17>Directives</AstroPart>
+<AstroPart pageToRun=17>Directives</AstroPart>
 
 ---
 clicks: 9
 ---
 
-<Directives/>
+<Directives  pageToRun=18 />
 
 ---
 ---

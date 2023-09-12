@@ -1,6 +1,23 @@
+<script setup>
+import { computed } from 'vue'
+
+const props = defineProps({
+	pageToRun: String
+})
+
+const shouldPlay = computed(()=>{
+	return props.pageToRun == $slidev.nav.currentPage
+})
+
+</script>
+
 <template>
 
 <section class="directives-wrapper" :class="{ 'align-center': $slidev.nav.clicks >= 4 }">
+
+<audio autoplay v-if="shouldPlay && $slidev.nav.clicks < 5">
+  	<source src="japanise_sound.mp3" type="audio/mp3">
+</audio>
 
 <p v-if="$slidev.nav.clicks <=3" :class="{ 'op-0': !($slidev.nav.clicks === 1) }">There are 5 directives</p>
 
@@ -8,7 +25,7 @@
 
 <p v-if="$slidev.nav.clicks <=3" :class="{ 'op-0': !($slidev.nav.clicks === 3) }">Once you master them all</p>
 
-<p v-if="$slidev.nav.clicks === 4" class="center-txt">You can control JS-monster</p>
+<p v-if="$slidev.nav.clicks <= 4" class="center-txt" :class="{ 'op-0': !($slidev.nav.clicks === 4) }">You can control JS-monster</p>
 
 <img v-if="$slidev.nav.clicks >= 5" src="/directive-pick.png"/>
 <div v-if="$slidev.nav.clicks >= 6" class="pick-square" :class="{
@@ -88,6 +105,6 @@
 }
 .op-0 {
     opacity: 0;
-  }
+}
 
 </style>
