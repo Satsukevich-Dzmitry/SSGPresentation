@@ -15,17 +15,13 @@ const shouldPlay = computed(()=>{
 
 <section class="directives-wrapper" :class="{ 'align-center': $slidev.nav.clicks >= 4 }">
 
-<audio autoplay v-if="shouldPlay && $slidev.nav.clicks < 5">
-  	<source src="japanise_sound.mp3" type="audio/mp3">
-</audio>
+<p v-if="$slidev.nav.clicks <=3" :class="{ 'op-0': !($slidev.nav.clicks === 1) }">There are 5 directives <span class="under-span">川カワキ味阪ミ</span></p>
 
-<p v-if="$slidev.nav.clicks <=3" :class="{ 'op-0': !($slidev.nav.clicks === 1) }">There are 5 directives</p>
+<p v-if="$slidev.nav.clicks <=3" :class="{ 'op-0': !($slidev.nav.clicks === 2) }">They give you great power <span class="under-span">際閉ぞやン時宣け</span></p>
 
-<p v-if="$slidev.nav.clicks <=3" :class="{ 'op-0': !($slidev.nav.clicks === 2) }">They give you great power</p>
+<p v-if="$slidev.nav.clicks <=3" :class="{ 'op-0': !($slidev.nav.clicks === 3) }">Once you master them all <span class="under-span">載フ週の約店井ゅ</span></p>
 
-<p v-if="$slidev.nav.clicks <=3" :class="{ 'op-0': !($slidev.nav.clicks === 3) }">Once you master them all</p>
-
-<p v-if="$slidev.nav.clicks <= 4" class="center-txt" :class="{ 'op-0': !($slidev.nav.clicks === 4) }">You can control JS-monster</p>
+<p v-if="$slidev.nav.clicks <= 4" class="center-txt" :class="{ 'op-0': !($slidev.nav.clicks === 4) }">You can control JS-monster <span class="under-span">川カワ阪ミ JS-キ味</span></p>
 
 <img v-if="$slidev.nav.clicks >= 5" src="/directive-pick.png"/>
 <div v-if="$slidev.nav.clicks >= 6" class="pick-square" :class="{
@@ -33,6 +29,10 @@ const shouldPlay = computed(()=>{
 	'number-3': $slidev.nav.clicks === 8,
 	'number-4': $slidev.nav.clicks === 9,
 }"></div>
+
+<audio autoplay v-if="shouldPlay && $slidev.nav.clicks < 5">
+  	<source src="japanise_sound.mp3" type="audio/mp3">
+</audio>
 
 </section>
 </template>
@@ -94,6 +94,7 @@ const shouldPlay = computed(()=>{
 	font-size: 55px;
 	line-height: 60px;
 	font-style: italic;
+	position: relative
 }
 
 .directives-wrapper p:nth-child(2) {
@@ -105,6 +106,16 @@ const shouldPlay = computed(()=>{
 }
 .op-0 {
     opacity: 0;
+}
+
+.under-span {
+	position: absolute;
+	left: 0;
+	top: 0;
+	color: rgba(255,255,255,0.5);
+	z-index: -1;
+	font-size: 75px;
+	filter: blur(2px);
 }
 
 </style>
