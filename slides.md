@@ -21,7 +21,7 @@ Today our topic is...
 
 <v-click>
 
-1-2-SSG!
+## Unlocking the Power of SSG
 
 </v-click>
 
@@ -191,7 +191,7 @@ clicks: 12
 
 ---
 preload: false
-clicks: 14
+clicks: 9
 src: ./pages/basicFlow.md
 ---
 
