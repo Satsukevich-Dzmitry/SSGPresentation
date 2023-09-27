@@ -15,7 +15,7 @@ const shouldDisplay = computed(()=>{
 	<div v-if="$slidev.nav.clicks === 1 && shouldDisplay" class="wrapper-drum">
 		<h1 class="font-serif title-by-drum"><slot></slot></h1>
 		<audio autoplay>
-  			<source src="bass-drop.mp3" type="audio/mp3">
+  			<source src="/bass-drop.mp3" type="audio/mp3">
 		</audio>
 	</div>
 </template>

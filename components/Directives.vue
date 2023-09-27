@@ -31,7 +31,7 @@ const shouldPlay = computed(()=>{
 }"></div>
 
 <audio autoplay v-if="shouldPlay && $slidev.nav.clicks < 5">
-  	<source src="japanise_sound.mp3" type="audio/mp3">
+  	<source src="/japanise_sound.mp3" type="audio/mp3">
 </audio>
 
 </section>
